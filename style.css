@@ -39,13 +39,13 @@ html, body {
 }
 
 header {
-  height: 200px;
+  height: 220px;
   margin-top: 50px;
   background:url(./images/glass-montage-hero.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   box-shadow: 0px 3px 4px black;
-  font-weight: 800;
+  font-weight: 700;
   color: white;
   text-shadow: 0px 3px 6px black;
   text-align: center;
@@ -53,7 +53,7 @@ header {
 .name {
   height: 80px;
   position: relative;
-  top: 30px;
+  top: 40px;
   background-color: rgba(0,0,0,.58);
 }
 #name {
@@ -68,7 +68,7 @@ header {
   height: 120px;
   width: 120px;
   position: relative;
-  top: 60px;
+  top: 80px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -78,11 +78,11 @@ header {
   background-size: 100%;
   box-shadow: 0px 3px 6px black;
 }
-.div-line {
+.div-line-header {
   height: 1px;
   width: calc(100vw - 40px);
   position: relative;
-  top: 270px;
+  top: 290px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -92,7 +92,23 @@ header {
   z-index: -1;
 }
 
-
+.p-title {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 93px;
+  margin-bottom: 1px;
+}
+.div-line {
+  height: 1px;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
 button {
   cursor: pointer;
   border: 0;
@@ -102,8 +118,8 @@ button {
 .row {
   max-width: 1100px;
   min-width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   margin: 0 auto;
 }
 .clearfix::after {
@@ -113,8 +129,8 @@ button {
 }
 .col-3, .col-4, .col-6, .col-6-links, .col-12 {
   float: left;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
   width: 100%;
 }
