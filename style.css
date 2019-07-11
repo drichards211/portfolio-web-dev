@@ -12,7 +12,7 @@ html, body {
   width: 100%;
   top: 0px;
   background-color: white;
-  box-shadow: 0px 0px 6px black;
+  box-shadow: 0px 2px 4px black;
   z-index: 9997;
 }
 .seasons-thumbnail {
@@ -47,7 +47,8 @@ header {
   background:url(./images/glass-montage-hero.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  box-shadow: 0px 3px 6px black;
+  box-shadow: 0px 4px 6px black;
+  /* box-shadow: 0px 3px 5px black; */
   font-weight: 700;
   color: white;
   text-shadow: 0px 3px 6px black;
@@ -61,6 +62,7 @@ header {
   /* background-color: rgba(0,0,0,.58); */
   /* background-color: rgba(0,0,0,.45); */
   background-color: rgba(0,0,0,.32);
+  /* background-color: rgba(0,0,0,.15); */
 }
 #name {
   font-size: 32px;
