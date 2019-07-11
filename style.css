@@ -11,6 +11,16 @@ html, body {
   height: 46px;
   width: 100%;
   top: 0px;
+  background-color: white;
+  box-shadow: 0px 0px 5px black;
+  /* box-shadow: 0px 2px 4px black; */
+  z-index: 9997;
+}
+.top-bar-black {
+  position: fixed;
+  height: 46px;
+  width: 100%;
+  top: 0px;
   background-color: black;
   /* box-shadow: 0px 0px 6px black; */
   /* box-shadow: 0px 2px 4px black; */
@@ -38,7 +48,7 @@ html, body {
   float: right;
   padding: 0;
   font-size: 37px;
-  color: #ffffff;
+  color: white;
 }
 
 header {
@@ -56,16 +66,20 @@ header {
   text-shadow: 0px 3px 6px black;
   text-align: center;
 }
+.header-dark {
+  box-shadow: 0px 4px 6px black !important;
+}
 .name {
   height: 80px;
   position: relative;
-  top: 60px;
+  top: 64px;
   /* top: 41px; */
-  background-color: rgba(0,0,0,.58);
+  /* background-color: rgba(0,0,0,.58); */
   /* background-color: rgba(0,0,0,.53); */
   /* background-color: rgba(0,0,0,.45); */
   /* background-color: rgba(0,0,0,.32); */
-  /* background-color: rgba(0,0,0,.15); */
+  background-color: rgba(0,0,0,.15);
+  box-shadow: 0px 0px 30px black;
 }
 #name {
   font-size: 32px;
