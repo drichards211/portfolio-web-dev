@@ -206,7 +206,7 @@ button {
 }
 
 /* SITE-WIDE VIEWPORT RESPONSE ========================== */
-@media only screen and (max-width: 460px) and (orientation: portrait) {
+@media only screen and (max-width: 359px) and (orientation: portrait) {
   header {
     max-height: calc(33vh);
   }
