@@ -123,6 +123,9 @@ header {
 .app-container {
   margin-top: 20px;
 }
+.app-spacer {
+  height: 0px;
+}
 .app-title {
   font-size: 24px;
   font-weight: 600;
@@ -206,5 +209,8 @@ button {
   }
   .square-image {
     /* top: 101px; */
+  }
+  .app-spacer {
+    height: 55px;
   }
 }
