@@ -61,6 +61,7 @@ header {
   /* background-attachment: fixed; */
   /* background-color: #141e30; */
   /* box-shadow: inset 0px 0px 6px 8px #000000e0; */
+  box-shadow: 0px 0px 4px 3px black;
   font-weight: 700;
   color: white;
   text-shadow: 3px 3px 6px black;
@@ -75,13 +76,13 @@ header {
   /* margin: auto; */
   padding-left: 10px;
   padding-right: 10px;
-  top: calc(50% - 52px);
-  /*   background-color: rgba(0,0,0,.19); */
-  background-color: rgba(0,0,0,.08);
-  /* background-color: rgba(0,0,0,.15); */
+  top: calc(50% - 34px);
+  /* background-color: rgba(0,0,0,.19); */
+  /* background-color: rgba(0,0,0,.08); */
+  background-color: rgba(0,0,0,.15);
   /* box-shadow: 0px 0px 30px black; */
-  box-shadow: 0px 0px 30px rgb(0, 0, 0);
-  /* box-shadow: 0px 0px 30px rgba(0,0,0,.32); */
+  /* box-shadow: 0px 0px 30px rgb(0, 0, 0); */
+  box-shadow: 0px 0px 30px rgba(0,0,0,.32);
   /* box-shadow: 0px 0px 30px rgba(0,0,0,.35); */
   /* border: 1px solid white; */
 }
@@ -96,16 +97,17 @@ header {
   padding-bottom: 5px;
 }
 .portfolio-button {
-  position: relative;
-  width: 158px;
+  position: absolute;
+  width: 175px;
   border-radius: 50px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: calc(50% - 20px);
+  top: calc(100vh - 90px);
   background-color: rgb(255, 255, 255);
-  box-shadow: 2px 4px 5px 0px #00000094;
+  border: 3.5px solid #525252;
+  /* box-shadow: 2px 4px 5px 0px #00000094; */
 }
 .portfolio {
   font-weight: 700;
