@@ -103,8 +103,9 @@ header {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 42%;
+  top: calc(50% - 20px);
   background-color: rgb(255, 255, 255);
+  box-shadow: 2px 4px 5px 0px #00000094;
 }
 .portfolio {
   font-weight: 700;
