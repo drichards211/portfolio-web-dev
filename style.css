@@ -106,13 +106,13 @@ header {
   margin-right: auto;
   top: calc(100vh - 90px);
   background-color: rgb(255, 255, 255);
-  border: 3.5px solid #525252;
+  border: 4px solid #525252;
   /* box-shadow: 2px 4px 5px 0px #00000094; */
 }
 .portfolio {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 21px;
-  color: #2b7fc9;
+  color: #525252;
   padding-top: 3px;
   padding-bottom: 4px;
 }
