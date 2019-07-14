@@ -244,8 +244,14 @@ button {
   .color-orange {
     color: rgb(254,153,0);
   }
-
+  .color-blue {
+    color: rgb(19,128,184);
+  }
+  
 /* FONT TRICKS ============================ */
+  .semi-bold {
+    font-weight: 600;
+  }  
   .bold {
     font-weight: 700;
   }
