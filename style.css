@@ -25,7 +25,7 @@ html, body {
   background-color: #131d2e;
   z-index: 9997;
 }
-.seasons-thumbnail {
+#seasons-thumbnail {
   width: 34px;
   height: 34px;
   margin-top: 6px;
@@ -38,7 +38,7 @@ html, body {
   background-size: cover;
 
 }
-.hamburger {
+#hamburger {
   width: 38px;
   height: 38px;
   margin-top: 1px;
@@ -117,7 +117,7 @@ header {
   top: calc(100vh - 5% - 64px);
   font: normal 400 18px lato, sans-serif;
 } 
-.portfolio {
+#portfolio {
   font-weight: 800;
   font-size: 60px;
   color: white;
@@ -329,7 +329,7 @@ button {
   .app-spacer {
     height: 55px;
   }
-  .portfolio {
+  #portfolio {
     font-size: 80px;
   }
   .portfolio-button {
