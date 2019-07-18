@@ -91,40 +91,37 @@ header {
   transition: display 2s;
 }
 #name {
-  font-family: acumin-pro, sans-serif;
+  /* font-family: acumin-pro, sans-serif; */
+  font-family: turnip-re, serif;
+  /* font-family: dogma-bold, sans-serif; */
+  /* font-family: monarcha, serif; */
+  /* font-family: trajan-pro-3, serif; */
   font-weight: 700;
   font-style: normal;
-  font-size: 32px;
   margin: 0px;
 }
 #title {
-  font-family: acumin-pro-wide, sans-serif;
+  font-family: lato, sans-serif;
   font-weight: 700;
-  font-style: normal;
-  font-size: 20px;
+  font-style: italic;
   margin-top: 0px;
   padding-bottom: 10px;
 }
 .portfolio-button {
   position: absolute;
-  width: 175px;
   border-radius: 50px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: calc(100vh - 5% - 63px);
+  top: calc(100vh - 5% - 64px);
   font: normal 400 18px lato, sans-serif;
-  background-color: rgb(255, 255, 255);
-  border: 4px solid #525252;
-  /* box-shadow: 2px 4px 5px 0px #00000094; */
-}
+} 
 .portfolio {
   font-weight: 800;
-  font-size: 21px;
-  color: #525252;
-  padding-top: 3px;
-  padding-bottom: 4px;
+  font-size: 60px;
+  color: white;
+  text-shadow: 4px 3px 6px black;
 }
 .port-title {
   position: relative;
@@ -331,6 +328,12 @@ button {
   }
   .app-spacer {
     height: 55px;
+  }
+  .portfolio {
+    font-size: 80px;
+  }
+  .portfolio-button {
+    top: calc(100vh - 5% - 82px);
   }
 }
 @media only screen and (min-aspect-ratio: 6/5) {
