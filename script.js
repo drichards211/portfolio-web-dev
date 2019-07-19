@@ -38,8 +38,12 @@ function centerNameVertically() {
     $(".name").css({"top": `calc(50% - (${nameHeight1} / 2))`})
     $(".name").css({"transition": "top 0.5s"})
   }, 300)
+  window.onresize = function() {
+    centerNameVertically()
+  }
 }
 
 $(function() {
   handleSiteNav()
+  centerNameVertically()
 })
