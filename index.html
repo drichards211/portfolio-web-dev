@@ -19,14 +19,19 @@
   <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript" src="jquery.fittext.js"></script>
 </head>
-
 <body>
-  <!-- MAIN CONTENT ============================================ -->
+<!-- MAIN CONTENT ============================================ -->
+  
   <nav role="navigation">
-    <div class="top-bar">
-      <button type="button" id="seasons-thumbnail"></button>
-      <button type="button" id="hamburger"><i class="fas fa-bars"></i></button>
-    </div>
+    <ul class="top-bar">
+      <li><a class="site-nav" href="#top" id="seasons-thumbnail" aria-label="Return to top of page"></a></li>
+      <li><a class="site-nav" href="#portfolio">PORTFOLIO</a></li>
+      <li><a class="site-nav" href="#about-me">ABOUT</a></li>
+      <li><a class="site-nav" href="#contact">CONTACT</a></li>
+      <li><button type="button" id="hamburger-button" aria-label="Open the menu"><i class="fas fa-bars" aria-hidden="true"></i></button></li>
+    </ul>
+
+  <!-- <button type="button" id="seasons-thumbnail"></button> -->
   </nav>
   <main role="main">
     <header role="banner" class="dark">
@@ -38,7 +43,7 @@
         </script>
       </div>
       <div class="portfolio-button">
-        <button type="button" id="portfolio"><i class="fas fa-chevron-circle-down"></i></button>
+        <button type="button" id="portfolio-button" aria-label="View portfolio"><i class="fas fa-chevron-circle-down" aria-hidden="true"></i></button>
       </div>
     </header>
     <section role="region">
@@ -48,7 +53,7 @@
         </div>
       </div>
       <div class="full-row">
-        <div class="col-12 no-padding seasons-div spring"></div>
+        <div class="col-12 no-padding seasons-div spring" id="portfolio"></div>
       </div>
       <div class="row">
         <div class="col-12">
@@ -69,7 +74,7 @@
               <span class="bold">Fully-playable</span> piano keyboard doubles as a unique and engaging site navigation tool.
             </p>
             <p class="app-links">
-                <i class="fas fa-briefcase color-mod-purple size-24"></i>&nbsp; Live App &nbsp;&nbsp;&nbsp;<i class="fab fa-github-square color-mod-purple size-24"></i>&nbsp; GitHub
+                <i class="fas fa-briefcase color-mod-purple size-24" aria-hidden="true"></i>&nbsp; Live App &nbsp;&nbsp;&nbsp;<i class="fab fa-github-square color-mod-purple size-24" aria-hidden="true"></i>&nbsp; GitHub
             </p>
             <p class="app-tech">HTML, CSS, JavaScript ES6, jQuery, AJAX, Photoshop, Audition, REAPER</p>
           </div>
@@ -98,7 +103,7 @@
               <span class="bold">Fully-playable</span> piano keyboard doubles as unique and engaging site navigation tool.
             </p>
             <p class="app-links">
-                <i class="fas fa-briefcase color-red size-24"></i>&nbsp; Live App &nbsp;&nbsp;&nbsp;<i class="fab fa-github-square color-red size-24"></i>&nbsp; GitHub
+                <i class="fas fa-briefcase color-red size-24" aria-hidden="true"></i>&nbsp; Live App &nbsp;&nbsp;&nbsp;<i class="fab fa-github-square color-red size-24" aria-hidden="true"></i>&nbsp; GitHub
             </p>
             <p class="app-tech">HTML, CSS, ES6, jQuery, Node/Express.js, Passport.js, MongoDB, Mongoose, Mocha/Chai, Travis Cl, Heroku, AJAX, Photoshop, Premiere, Blender</p>
           </div>
@@ -127,7 +132,7 @@
               <span class="bold">Recreate</span> the experience of operating the USS Enterprise computer terminals with extensive CSS styling.
             </p>
             <p class="app-links">
-                <i class="fas fa-briefcase color-orange size-24"></i>&nbsp; Live App &nbsp;&nbsp;&nbsp;<i class="fab fa-github-square color-orange size-24"></i>&nbsp; GitHub
+                <i class="fas fa-briefcase color-orange size-24" aria-hidden="true"></i>&nbsp; Live App &nbsp;&nbsp;&nbsp;<i class="fab fa-github-square color-orange size-24" aria-hidden="true"></i>&nbsp; GitHub
             </p>
             <p class="app-tech">HTML, CSS, JavaScript ES6, jQuery, Photoshop</p>
           </div>
@@ -143,7 +148,7 @@
         <div class="col-12">
           <div class="spacer"></div>
         </div>
-        <div class="col-6 no-margin">
+        <div class="col-6 no-margin" id="about-me">
           <div class="app-container">
             <div class="app-image">
               <img src="./images/glass-montage-balanced-no-margins.jpg" alt="Four seasons glass-tile image.">
@@ -162,9 +167,9 @@
             <p>I always encourage a strong sense of <span class="semi-bold color-blue">play</span> and meaningful interaction in all things.</p>
             <p></p>
             <br>
-            <h4 class="app-title color-blue">FIND ME HERE</h4>
+            <h4 class="app-title color-blue" id="contact">FIND ME HERE</h4>
               <p class="contact-links">
-              <span class="do-not-break"><i class="fab fa-linkedin color-blue size-24"></i>&nbsp;&nbsp;LinkedIn &nbsp;&nbsp;</span> <span class="do-not-break"><i class="fab fa-github-square color-blue size-24"></i>&nbsp;&nbsp;GitHub &nbsp;&nbsp;</span> <span class="do-not-break"><i class="fas fa-file color-blue size-24"></i>&nbsp;&nbsp;Résumé &nbsp;&nbsp;</span> <span class="do-not-break"><i class="fas fa-envelope color-blue size-24"></i>&nbsp; Email</span>
+              <span class="do-not-break"><i class="fab fa-linkedin color-blue size-24" aria-hidden="true"></i>&nbsp;&nbsp;LinkedIn &nbsp;&nbsp;</span> <span class="do-not-break"><i class="fab fa-github-square color-blue size-24" aria-hidden="true"></i>&nbsp;&nbsp;GitHub &nbsp;&nbsp;</span> <span class="do-not-break"><i class="fas fa-file color-blue size-24" aria-hidden="true"></i>&nbsp;&nbsp;Résumé &nbsp;&nbsp;</span> <span class="do-not-break"><i class="fas fa-envelope color-blue size-24" aria-hidden="true"></i>&nbsp; Email</span>
             </p>
             <p class="app-tech"><span class="underline">Four Seasons Glass Wall Art</span> © Anne Nye. Please visit her <span class="underline">online store</span>.</p>
           </div>
