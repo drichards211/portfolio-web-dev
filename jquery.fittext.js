@@ -12,7 +12,7 @@
 (function( $ ){
 
   $.fn.fitText = function( kompressor, compLevel, options ) { 
-    // DR added compLevel to fine-tune font-sizing on a case-by-case basis
+    // Added compLevel to fine-tune font-sizing on a case-by-case basis - DR
 
     // Setup options
     var compressor = kompressor || 1,
@@ -28,10 +28,12 @@
 
       // Resizer() resizes items based on the object width divided by the compressor * 10
       var resizer = function () {
-        $this.css('font-size', Math.max(Math.min($this.width() / (eval(compCalc)), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
+        // Setting transition animation to 0s prevents centerNameVertically() from obtaining incorrect size-values - DR
+        $this.css({"transition": "font-size 0s"}) 
+        // centerNameVertically() is added as a jQuery callback to force re-centering of .name after font-resizing - DR
+        $this.css('font-size', Math.max(Math.min($this.width() / (eval(compCalc)), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)), centerNameVertically());
       };
-      //compressor*13.5
-
+      
       // Call once to set.
       resizer();
 
