@@ -46,7 +46,7 @@ li a {
   height: 34px;
   margin-top: 6px;
   margin-bottom: 6px;
-  margin-left: 2.56%;
+  margin-left: 13px;
   float: left;
   padding: 0;
   background: url(./images/glass-montage-balanced-button.jpg);
@@ -59,7 +59,7 @@ li a {
   height: 38px;
   margin-top: 1px;
   margin-bottom: 7px;
-  margin-right: 2.49%;
+  margin-right: 13px;
   float: right;
   padding: 0;
   font-size: 37px;
@@ -336,8 +336,8 @@ button {
 }
 .col-3, .col-4, .col-6, .col-6-links, .col-12 {
   float: left;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 13px;
+  padding-right: 13px;
   margin-bottom: 20px;
   width: 100%;
 }
@@ -379,6 +379,18 @@ button {
   .portfolio-button {
     top: calc(100vh - 5% - 82px);
     width: 175px;
+  }
+}
+@media only screen and (min-width: 460px) {
+  .col-3, .col-4, .col-6, .col-6-links, .col-12 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #seasons-thumbnail {
+    margin-left: 20px;
+  }
+  #hamburger-button {
+    margin-right: 20px;
   }
 }
 @media only screen and (min-aspect-ratio: 6/5) {
