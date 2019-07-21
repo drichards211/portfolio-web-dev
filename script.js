@@ -1,3 +1,16 @@
+function measureMobileViewportHeight() {
+// Mobile versions of Chrome and Safari ignore the address bar when calculating vh.
+// This calculates the true value using .innerHeight and sets it as the CSS var --vh.
+  console.log("measureMobileViewportHeight() running")
+  let vh = window.innerHeight * 0.01
+  document.documentElement.style.setProperty('--vh', `${vh}px`)
+  // re-calculate if viewport changes size:
+  window.addEventListener('resize', function() {
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+  })
+}
+
 function handleSiteNav() {
 // Respond to top-bar clicks:
   console.log('handleSiteNav() running')
@@ -39,6 +52,6 @@ function centerNameVertically() {
 }
 
 $(function() {
+  measureMobileViewportHeight()
   handleSiteNav()
-  /* centerNameVertically() */
 })
