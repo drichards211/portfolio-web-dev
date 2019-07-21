@@ -80,9 +80,9 @@ li a {
 header {
   height: 100vh;
   /* max-height: calc((100vw / 1.217)); */
-  background:url(./images/glass-montage-balanced-no-margin-top-and-bottom.png);
+  background:url(./images/glass-montage-balanced-no-margins.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 0px;
   background-size: cover;
   /* margin-top: calc((100vh - (100vw / 1.217)) * .5);
   margin-bottom: calc((100vh - (100vw / 1.217)) * .5); */
@@ -398,7 +398,7 @@ button {
     /* background-color: #141e30; */
     margin-top: 0px;
     margin-bottom: 0px;
-    background-position: center 47px;
+    background-position: center 0px;
   }
   .name {
     padding-left: 10%;
