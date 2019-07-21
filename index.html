@@ -19,26 +19,31 @@
   <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript" src="jquery.fittext.js"></script>
 </head>
-
 <body>
-  <!-- MAIN CONTENT ============================================ -->
+<!-- MAIN CONTENT ============================================ -->
+  
   <nav role="navigation">
-    <div class="top-bar">
-      <button type="button" id="seasons-thumbnail"></button>
-      <button type="button" id="hamburger"><i class="fas fa-bars"></i></button>
-    </div>
+    <ul class="top-bar">
+      <li><a class="site-nav" href="#top" id="seasons-thumbnail" aria-label="Return to top of page"></a></li>
+      <li><a class="site-nav" href="#portfolio">PORTFOLIO</a></li>
+      <li><a class="site-nav" href="#about-me">ABOUT</a></li>
+      <li><a class="site-nav" href="#contact">CONTACT</a></li>
+      <li><button type="button" id="hamburger-button" aria-label="Open the menu"><i class="fas fa-bars" aria-hidden="true"></i></button></li>
+    </ul>
+
+  <!-- <button type="button" id="seasons-thumbnail"></button> -->
   </nav>
   <main role="main">
     <header role="banner" class="dark">
       <div class="name">
         <h1 id="name" class="size-name">DANIEL RICHARDS</h1>
         <h2 id="title" class="size-title">Web Developer and Designer</h2>
-        <script>$('.size-name').fitText(1, 'compressor * 14');
-          $('.size-title').fitText(1, 'compressor * 23.4');
+        <script>$('.size-name').fitText(1, 'compressor * 13.3');
+          $('.size-title').fitText(1, 'compressor * 22.23');
         </script>
       </div>
       <div class="portfolio-button">
-        <button type="button" id="portfolio"><i class="fas fa-chevron-circle-down"></i></button>
+        <button type="button" id="portfolio-button">VIEW PORTFOLIO</button>
       </div>
     </header>
     <section role="region">
@@ -48,7 +53,7 @@
         </div>
       </div>
       <div class="full-row">
-        <div class="col-12 no-padding seasons-div spring"></div>
+        <div class="col-12 no-padding seasons-div spring" id="portfolio"></div>
       </div>
       <div class="row">
         <div class="col-12">
@@ -57,7 +62,7 @@
         <div class="col-6 no-margin">
           <div class="app-container">
             <div class="app-image">
-              <img src="./images/chromatical-responsive-3-cropped.jpg" alt="Chromatical web app screen images displayed on desktop, tablet, and mobile.">
+              <img src="./images/chromatical-responsive-3-cropped-tight.jpg" alt="Chromatical web app screen images displayed on desktop, tablet, and mobile.">
             </div>
           </div>
         </div>
@@ -69,7 +74,7 @@
               <span class="bold">Fully-playable</span> piano keyboard doubles as a unique and engaging site navigation tool.
             </p>
             <p class="app-links">
-                <i class="fas fa-briefcase color-mod-purple size-24"></i>&nbsp; Live App &nbsp;&nbsp;&nbsp;<i class="fab fa-github-square color-mod-purple size-24"></i>&nbsp; GitHub
+              <a href='https://drichards211.github.io/chromatical/' target='_blank'><i class="fas fa-briefcase color-mod-purple size-24" aria-hidden="true"></i>&nbsp; Live App</a> &nbsp;&nbsp;&nbsp;<a href='https://github.com/drichards211/chromatical' target='_blank'><i class="fab fa-github-square color-mod-purple size-24" aria-hidden="true"></i>&nbsp; GitHub</a>
             </p>
             <p class="app-tech">HTML, CSS, JavaScript ES6, jQuery, AJAX, Photoshop, Audition, REAPER</p>
           </div>
@@ -86,19 +91,19 @@
         <div class="col-6 no-margin right">
           <div class="app-container">
             <div class="app-image">
-              <img src="./images/revuer-responsive-11-cropped.jpg" alt="Revuer web app screen images displayed on desktop, tablet, and mobile.">
+              <img src="./images/revuer-responsive-11-cropped-tight.jpg" alt="Revuer web app screen images displayed on desktop, tablet, and mobile.">
             </div>
           </div>
         </div>
         <div class="col-6 right">
           <div class="app-container">
             <h4 class="app-title color-red">REVUER — FULL-STACK WEB APP</h4>
-            <p class="app-about"><span class="bold">Colorful</span> and engaging music exploration app.<br>
-              <span class="bold">Calls</span> up to 7 different music APIs.<br>
-              <span class="bold">Fully-playable</span> piano keyboard doubles as unique and engaging site navigation tool.
+            <p class="app-about"><span class="bold">Track</span> every movie you've ever seen with custom reviews and notes.<br>
+              <span class="bold">Visualize</span> your database inside a virtual movie theater with interactive movie-reels, film posters and movie marquees.<br>
+              <span class="bold">Search</span> additional data and images from the Open Movie Database API.
             </p>
             <p class="app-links">
-                <i class="fas fa-briefcase color-red size-24"></i>&nbsp; Live App &nbsp;&nbsp;&nbsp;<i class="fab fa-github-square color-red size-24"></i>&nbsp; GitHub
+              <a href='https://revuer.herokuapp.com' target='_blank'><i class="fas fa-briefcase color-red size-24" aria-hidden="true"></i>&nbsp; Live App</a> &nbsp;&nbsp;&nbsp;<a href='https://github.com/drichards211/revuer' target='_blank'><i class="fab fa-github-square color-red size-24" aria-hidden="true"></i>&nbsp; GitHub</a>
             </p>
             <p class="app-tech">HTML, CSS, ES6, jQuery, Node/Express.js, Passport.js, MongoDB, Mongoose, Mocha/Chai, Travis Cl, Heroku, AJAX, Photoshop, Premiere, Blender</p>
           </div>
@@ -115,7 +120,7 @@
         <div class="col-6 no-margin">
           <div class="app-container">
             <div class="app-image">
-              <img src="./images/sttng-responsive-3-cropped.jpg" alt="Star Trek quiz web app screen images displayed on desktop, tablet, and mobile.">
+              <img src="./images/sttng-responsive-3-cropped-tight.jpg" alt="Star Trek quiz web app screen images displayed on desktop, tablet, and mobile.">
             </div>
           </div>
         </div>
@@ -127,7 +132,7 @@
               <span class="bold">Recreate</span> the experience of operating the USS Enterprise computer terminals with extensive CSS styling.
             </p>
             <p class="app-links">
-                <i class="fas fa-briefcase color-orange size-24"></i>&nbsp; Live App &nbsp;&nbsp;&nbsp;<i class="fab fa-github-square color-orange size-24"></i>&nbsp; GitHub
+              <a href='https://drichards211.github.io/sttng-quiz-app/' target='_blank'><i class="fas fa-briefcase color-orange size-24" aria-hidden="true"></i>&nbsp; Live App</a> &nbsp;&nbsp;&nbsp;<a href='https://github.com/drichards211/sttng-quiz-app' target='_blank'><i class="fab fa-github-square color-orange size-24" aria-hidden="true"></i>&nbsp; GitHub</a>
             </p>
             <p class="app-tech">HTML, CSS, JavaScript ES6, jQuery, Photoshop</p>
           </div>
@@ -143,7 +148,7 @@
         <div class="col-12">
           <div class="spacer"></div>
         </div>
-        <div class="col-6 no-margin">
+        <div class="col-6 no-margin" id="about-me">
           <div class="app-container">
             <div class="app-image">
               <img src="./images/glass-montage-balanced-no-margins.jpg" alt="Four seasons glass-tile image.">
@@ -155,18 +160,16 @@
             <h4 class="app-title color-blue">ABOUT ME</h4>
             <p class="app-about">A web designer for all <span class="semi-bold color-blue">seasons</span> — I love kayaking, hiking, skiing, and spending time outdoors.</p>
             <p></p>
-            <p class="app-about">I believe good web design incorporates both utility and <span class="semi-bold color-blue">meaning</span>. A strong thematic element increases your audience's <span class="semi-bold color-blue">engagement</span> with your content.</p>
+            <p class="app-about">I believe good web design incorporates both utility and <span class="semi-bold color-blue">meaning</span>. Strong thematic elements increase audience <span class="semi-bold color-blue">engagement</span> with your content.</p>
             <p></p>  
-            <!-- <p>I enjoy expressing the <span class="semi-bold color-blue">emotional</span> core of your message as a recurring <span class="semi-bold color-blue">thematic element</span> throughout the UI.</p>
-            <p></p>   -->
-            <p>I always encourage a strong sense of <span class="semi-bold color-blue">play</span> and meaningful interaction in all things.</p>
+            <p class="app-about">I always encourage a strong sense of <span class="semi-bold color-blue">play</span> and meaningful interaction in all things.</p>
             <p></p>
             <br>
-            <h4 class="app-title color-blue">FIND ME HERE</h4>
+            <h4 class="app-title color-blue" id="contact">FIND ME HERE</h4>
               <p class="contact-links">
-              <span class="do-not-break"><i class="fab fa-linkedin color-blue size-24"></i>&nbsp;&nbsp;LinkedIn &nbsp;&nbsp;</span> <span class="do-not-break"><i class="fab fa-github-square color-blue size-24"></i>&nbsp;&nbsp;GitHub &nbsp;&nbsp;</span> <span class="do-not-break"><i class="fas fa-file color-blue size-24"></i>&nbsp;&nbsp;Résumé &nbsp;&nbsp;</span> <span class="do-not-break"><i class="fas fa-envelope color-blue size-24"></i>&nbsp; Email</span>
+              <span class="do-not-break"><a href='https://www.linkedin.com/in/drichards211' target='_blank'><i class="fab fa-linkedin color-blue size-24" aria-hidden="true"></i>&nbsp;&nbsp;LinkedIn</a> &nbsp;&nbsp;</span> <span class="do-not-break"><a href='https://github.com/drichards211' target='_blank'><i class="fab fa-github-square color-blue size-24" aria-hidden="true"></i>&nbsp;&nbsp;GitHub</a> &nbsp;&nbsp;</span> <span class="do-not-break"><a href='https://drichards211.github.io/resume-web-dev/' target='_blank'><i class="fas fa-file color-blue size-24" aria-hidden="true"></i>&nbsp;&nbsp;Résumé</a> &nbsp;&nbsp;</span> <span class="do-not-break"><a href='mailto:drichards211@yahoo.com' target='_blank'><i class="fas fa-envelope color-blue size-24" aria-hidden="true"></i>&nbsp; Email</a></span>
             </p>
-            <p class="app-tech"><span class="underline">Four Seasons Glass Wall Art</span> © Anne Nye. Please visit her <span class="underline">online store</span>.</p>
+            <p class="app-tech"><a href='https://www.artfulhome.com/product/Art-Glass-Wall-Art/Four-Seasons-Glass-Wall-Art/85404' target='blank-'><span class="underline">Four Seasons Glass Wall Art</span></a> © Anne Nye. Please visit her <span class="underline"><a href='https://www.artfulhome.com/artist/Anne-Nye-Glass/8425' target='_blank'>online store</a></span>.</p>
           </div>
         </div>
         <div class="col-12 app-spacer no-margin"></div>
