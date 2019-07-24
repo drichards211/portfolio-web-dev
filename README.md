@@ -20,6 +20,7 @@ Styling:
 Housekeeping:
   * [ ] Add debouncing to scroll and resize events.
   * [ ] Add "Work in Progress" warning to Revuer section.
+  * [ ] Remove unused fonts from Adobe web project.
      
 Troubleshooting:
   * [ ] Needs testing on multiple real-world devices and resolutions.
