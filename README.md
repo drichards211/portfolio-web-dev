@@ -16,6 +16,7 @@ Styling:
   * [ ] Adjust vertical positioning of hero image for extremely wide viewports.
   * [ ] Audition alternative fonts for #name.
   * [ ] Possibly include name in .top-bar.
+  * [ ] Update screen capture images so that text is legible.
   
 Housekeeping:
   * [ ] Add debouncing to scroll and resize events.
