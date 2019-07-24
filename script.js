@@ -14,15 +14,17 @@ function measureMobileViewportHeight() {
 function handleSiteNav() {
 // Respond to top-bar clicks:
   console.log('handleSiteNav() running')
-  $(".site-nav").on("click", function( e ) {
+  $(".site-nav").on("click", function(e) {
     e.preventDefault()
     // href='#top' is used in html to preserve navigation if JavaScript fails to load.
     // Ternary operator changes value of href='#top' to 'html, body' so JS can successfully 
     // scroll to the top of page. All other values are assigned to hrefNew without changes.
     let hrefNew = ($(this).attr('href') === '#top' ? 'html, body' : $(this).attr('href'))
+    // scroll to beginning of specified href:
     $("body, html").animate({ 
-      scrollTop: $(hrefNew).offset().top 
+      scrollTop: $(hrefNew).offset().top
     }, 800)
+    $('.site-nav').removeClass('vertical-nav')
   })
   // Respond to other button presses:
   $('body').on('click', 'button', function(event) {
@@ -37,12 +39,18 @@ function handleSiteNav() {
     // hamburger button pressed:
     if (`${$(this).prop('id')}` === 'hamburger-button') {
       console.log("hamburger button pressed")
-      // pseudocode - display hamburger dropdown menu:
+      // display or hide dropdown menu:
+      $('.site-nav').toggleClass('vertical-nav')
+    }
+    window.onresize = function() {
+    // hide dropdown menu when viewport rotated or resized:
+      console.log('Hiding dropdown menu')
+      $('.site-nav').removeClass('vertical-nav')
     } 
   })
 }
 
-function centerNameVertically() {
+function centerNameVertically() { // called by resizer() in jquery.fittext.js
 // Centers name vertically within the hero image:
   setTimeout(function() {
     // wait 0.3 seconds for .name element to finish adjusting size before measuring:
