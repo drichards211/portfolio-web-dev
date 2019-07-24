@@ -20,6 +20,7 @@ Styling:
 Housekeeping:
   * [ ] Add debouncing to scroll and resize events.
   * [ ] Add "Work in Progress" warning to Revuer section.
+  * [ ] Remove any unused classes and re-organize style.css.
      
 Troubleshooting:
   * [ ] Needs testing on multiple real-world devices and resolutions.
