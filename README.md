@@ -4,7 +4,7 @@ Web developer portfolio for Daniel Richards.
 Please view the live version [here:](https://drichards211.github.io/portfolio-web-dev/)
 
 
-TO-DO list follows, inlcuding required bugfixes and styling notes:
+TO-DO list follows, including required bugfixes and styling notes:
 
 Accessibility (a11y):
   * [ ] Entire page needs to be re-checked for a11y, (ARIA tags, full keyboard control, etc.).
