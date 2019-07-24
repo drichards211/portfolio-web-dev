@@ -1,5 +1,5 @@
 # portfolio-web-dev
-Web developer portfolio for Daniel Richards
+Web developer portfolio for Daniel Richards.
 
 Please view the live version [here:](https://drichards211.github.io/portfolio-web-dev/)
 
@@ -19,6 +19,7 @@ Styling:
   
 Housekeeping:
   * [ ] Add debouncing to scroll and resize events.
+  * [ ] Add "Work in Progress" warning to Revuer section.
      
 Troubleshooting:
   * [ ] Needs testing on multiple real-world devices and resolutions.
