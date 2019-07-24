@@ -23,4 +23,4 @@ Housekeeping:
      
 Troubleshooting:
   * [ ] Needs testing on multiple real-world devices and resolutions.
-  
+  * [ ] Fix #portfolio-button :hover and :focus background-color not centered on mobile viewports.  
