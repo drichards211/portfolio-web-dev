@@ -7,6 +7,9 @@
 * http://sam.zoy.org/wtfpl/
 *
 * Date: Thu May 05 14:23:00 2011 -0600
+*
+* Modifed by Daniel Richards, 2019
+* "- DR" indicates any changes made
 */
 
 (function( $ ){
