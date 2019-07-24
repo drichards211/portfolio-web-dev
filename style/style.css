@@ -67,7 +67,7 @@ a {
   margin-right: 20px;
   float: left;
   padding: 0;
-  background: url(./images/glass-montage-balanced-square-button.jpg);
+  background: url(../images/glass-montage-balanced-square-button.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -102,7 +102,7 @@ a {
 header {
   height: 100vh;
   height: calc(var(--vh) * 100);
-  background:url(./images/glass-montage-balanced-no-margins.jpg);
+  background:url(../images/glass-montage-balanced-no-margins.jpg);
   background-repeat: no-repeat;
   background-position: center 0px;
   background-size: cover;
@@ -216,28 +216,28 @@ header {
   box-shadow: 0px 0px 4px 1px #000000;
 }
 .spring {
-  background:url(./images/glass-spring-2000px.jpg);
+  background:url(../images/glass-spring-2000px.jpg);
   background-repeat: no-repeat;
   background-position: center 28%;
   background-size: 100%;
   background-attachment: fixed;
 }
 .summer {
-  background:url(./images/glass-summer-2000px.jpg);
+  background:url(../images/glass-summer-2000px.jpg);
   background-repeat: no-repeat;
   background-position: center 32%;
   background-size: 100%;
   background-attachment: fixed;
 }
 .autumn {
-  background:url(./images/glass-fall-2000px.jpg);
+  background:url(../images/glass-fall-2000px.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: 100%;
   background-attachment: fixed;
 }
 .winter {
-  background:url(./images/glass-winter-2000px.jpg);
+  background:url(../images/glass-winter-2000px.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: 100%;
