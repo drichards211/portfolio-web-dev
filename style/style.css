@@ -340,8 +340,8 @@ button {
 }
 .col-3, .col-4, .col-6, .col-6-links, .col-12 {
   float: left;
-  padding-left: 13px;
-  padding-right: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
   width: 100%;
 }
