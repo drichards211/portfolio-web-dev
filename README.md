@@ -1,7 +1,7 @@
 # portfolio-web-dev
 Web developer portfolio for Daniel Richards.
 
-Please view the live version [here:](https://drichards211.github.io/portfolio-web-dev/)
+Please view the live version [here:](https://www.drdesignpro.com/)
 
 
 TO-DO list follows, including required bugfixes and styling notes:
