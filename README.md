@@ -12,7 +12,7 @@ Accessibility (a11y):
    
 Styling:
   * [ ] Disable parallax scrolling for mobile viewports, (and use shorter .seasons-div images).
-  * [ ] Set a maximum width on .name for extremely wide viewports. 
+  * [X] Set a maximum width on .name for extremely wide viewports. 
   * [ ] Adjust vertical positioning of hero image for extremely wide viewports.
   * [ ] Audition alternative fonts for #name.
   * [ ] Possibly include name in .top-bar.
@@ -20,7 +20,7 @@ Styling:
   
 Housekeeping:
   * [ ] Add debouncing to scroll and resize events.
-  * [ ] Add "Work in Progress" warning to Revuer section.
+  * [X] Add "Work in Progress" warning to Revuer section.
   * [ ] Remove any unused classes and re-organize style.css.
      
 Troubleshooting:
