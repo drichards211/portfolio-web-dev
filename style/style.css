@@ -134,7 +134,7 @@ header {
   font: normal 700 18px lato, sans-serif;
   left: 0;
   right: 0;
-  top: calc(100vh - 61px);
+  bottom: 30px;
 } 
 #portfolio-button {
   color: rgb(75, 75, 75);
@@ -359,7 +359,7 @@ button {
     padding: 6px 16px 6px;
   }
   .portfolio-button {
-    top: calc(100vh - 93px);
+    bottom: 54px;
   }
   .name {
     padding-left: 20%;
