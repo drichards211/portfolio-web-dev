@@ -394,7 +394,7 @@ button {
   header {
     margin-top: 0px;
     margin-bottom: 0px;
-    background-position: center 0px;
+    background-position: center 4%;
   }
   .name {
     padding-left: 20%;
@@ -402,6 +402,11 @@ button {
   }
 }
 @media only screen and (min-aspect-ratio: 6/5) and (min-width: 1024px) {
+  header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-position: center 14%;
+  }
   .name {
     padding-left: 26%;
     padding-right: 26%;
