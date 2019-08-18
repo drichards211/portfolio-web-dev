@@ -11,18 +11,18 @@ Accessibility (a11y):
   * [ ] Needs to be tested with screenreader (NVDA) and optimized if necessary.
    
 Styling:
-  * [ ] Disable parallax scrolling for mobile viewports, (and use shorter .seasons-div images).
   * [X] Set a maximum width on .name for extremely wide viewports. 
   * [ ] Adjust vertical positioning of hero image for extremely wide viewports.
   * [ ] Audition alternative fonts for #name.
   * [ ] Possibly include name in .top-bar.
   * [ ] Update screen capture images so that text is legible.
+  * [ ] Darken box-shadows slightly on .seasons-div for greater contrast between sections.
   
 Housekeeping:
   * [ ] Add debouncing to scroll and resize events.
   * [X] Add "Work in Progress" warning to Revuer section.
-  * [ ] Remove any unused classes and re-organize style.css.
+  * [X] Remove any unused classes and re-organize style.css.
      
 Troubleshooting:
-  * [ ] Needs testing on multiple real-world devices and resolutions.
-  * [ ] Fix #portfolio-button :hover and :focus background-color not centered on mobile viewports.  
+  * [X] Needs testing on multiple real-world devices and resolutions.
+  * [X] Fix #portfolio-button :hover and :focus background-color not centered on mobile viewports.  
