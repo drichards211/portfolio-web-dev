@@ -153,7 +153,7 @@ header {
 #portfolio-button:focus {
   color: white;
   background-color: rgb(18, 123, 177);
-  /* background-color: rgb(0, 60, 116); */
+  border: 2px solid rgb(18, 123, 177);
 }
 .port-title {
   position: relative;
