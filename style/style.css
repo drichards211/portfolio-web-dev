@@ -19,7 +19,7 @@ a {
   margin: 0;
   padding: 0;
   background-color: white;
-  box-shadow: 0px 3px 3px 1px #434343e0;
+  box-shadow: 0px 3px 3px 1px rgb(75, 75, 75);
   z-index: 9997;
 }
 .top-bar li {
@@ -32,17 +32,19 @@ a {
   display: none;
   float: left;
   text-align: center;
-  padding: 10px 15px;
+  padding: 10.5px 15px;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-  color: #141e309c;
+  color: rgb(75, 75, 75);
 }
 .site-nav:hover {
-  background-color: rgb(236, 236, 236);
+  color: white;
+  background-color: rgb(75, 75, 75);
 }
 .site-nav:focus {
-  background-color: rgb(236, 236, 236);
+  color: white;
+  background-color: rgb(75, 75, 75);
 }
 .top-bar-black {
   position: fixed;
@@ -61,9 +63,7 @@ a {
 #seasons-thumbnail {
   width: 35px;
   height: 35px;
-  margin-top: 6px;
-  margin-left: 13px;
-  margin-right: 20px;
+  margin: 6px 20px 5px 13px;
   float: left;
   padding: 0;
   background: url(../images/glass-montage-balanced-square-button.jpg);
@@ -79,7 +79,7 @@ a {
   float: right;
   padding: 0;
   font-size: 37px;
-  color: #818181;
+  color: rgb(75, 75, 75);
   display: block;
 }
 .screen-reader-text {
@@ -117,17 +117,16 @@ header {
   transition: display 2s;
 }
 #name {
-  font-family: turnip-re, serif;
+  font-family: lato, sans-serif;
   font-weight: 700;
   font-style: normal;
-  margin: 0px;
+  margin: 10px 0px 0px 0px;
 }
 #title {
   font-family: lato, sans-serif;
   font-weight: 700;
-  font-style: italic;
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 .portfolio-button {
   position: absolute;
@@ -137,22 +136,24 @@ header {
   bottom: 30px;
 } 
 #portfolio-button {
-  color: rgb(75, 75, 75);
+  color: white;
   font-size: 15px;
   font-weight: 700;
   padding: 4px 16px 6px;
   border-radius: 50px;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(75, 75, 75);
+  background-color: rgb(18, 123, 177);
+  border: 2px solid white;
 }
 #portfolio-button:hover {
   background-color: rgb(75, 75, 75);
+  border: 2px solid rgb(75, 75, 75);
+  /* box-shadow: none; */
   color: white;
 }
 #portfolio-button:focus {
   color: white;
-  background-color: rgb(18, 123, 177);
-  border: 2px solid rgb(18, 123, 177);
+  background-color: rgb(75, 75, 75);
+  border: 2px solid rgb(75, 75, 75);
 }
 .port-title {
   position: relative;
@@ -201,7 +202,7 @@ header {
 }
 .seasons-div {
   height: 18vh;
-  box-shadow: 0px 0px 4px 1px #000000;
+  box-shadow: 0px 0px 3px 2px #000000;
 }
 .spring {
   background:url(../images/glass-spring-2000px.jpg);
@@ -367,7 +368,7 @@ button {
     box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 0.49);
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .site-nav {
     display: block;
   }
