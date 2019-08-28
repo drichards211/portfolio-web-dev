@@ -95,14 +95,20 @@ a {
 }
 header {
   height: 100vh;
-  background:url(../images/glass-montage-balanced-no-margins.jpg);
-  background-repeat: no-repeat;
-  background-position: center 0px;
-  background-size: cover;
-  background-attachment: fixed;
+  background: url(../images/glass-montage-balanced-no-margin-top-and-bottom-half-sides.jpg) center top/cover repeat-x 
+    fixed;
+  -webkit-animation: slide 14s linear infinite;
   color: white;
   text-shadow: 3px 3px 6px black;
   text-align: center;
+}
+@-webkit-keyframes slide {
+  from { background-position: initial; }
+  to { background-position: calc(-100vh * 1.18634) 0%; }
+}
+@-moz-keyframes slide {
+  from { background-position: initial; }
+  to { background-position: calc(-100vh * 1.18634) 0%; }
 }
 .header-dark {
   box-shadow: 0px 4px 6px black !important;
@@ -208,28 +214,24 @@ header {
   background-repeat: no-repeat;
   background-position: center 28%;
   background-size: 100%;
-  background-attachment: fixed;
 }
 .summer {
   background:url(../images/glass-summer-2000px.jpg);
   background-repeat: no-repeat;
   background-position: center 32%;
   background-size: 100%;
-  background-attachment: fixed;
 }
 .autumn {
   background:url(../images/glass-fall-2000px.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: 100%;
-  background-attachment: fixed;
 }
 .winter {
   background:url(../images/glass-winter-2000px.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: 100%;
-  background-attachment: fixed;
 }
 .app-container {
   margin-top: 20px;
@@ -396,6 +398,15 @@ button {
     margin-top: 0px;
     margin-bottom: 0px;
     background-position: center 4%;
+    -webkit-animation: slide 30s linear infinite;
+  }
+  @-webkit-keyframes slide {
+    from { background-position: 0% 4%; }
+    to { background-position: -200vw 4%; }
+  }
+  @-moz-keyframes slide {
+    from { background-position: 0% 4%; }
+    to { background-position: -200vw 4%; }
   }
   .name {
     padding-left: 20%;
@@ -407,6 +418,15 @@ button {
     margin-top: 0px;
     margin-bottom: 0px;
     background-position: center 14%;
+    -webkit-animation: slide 30s linear infinite;
+  }
+  @-webkit-keyframes slide {
+    from { background-position: 0% 14%; }
+    to { background-position: -200vw 14%; }
+  }
+  @-moz-keyframes slide {
+    from { background-position: 0% 14%; }
+    to { background-position: -200vw 14%; }
   }
   .name {
     padding-left: 26%;
