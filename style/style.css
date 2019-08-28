@@ -95,8 +95,7 @@ a {
 }
 header {
   height: 100vh;
-  background: url(../images/glass-montage-balanced-no-margin-top-and-bottom-half-sides.jpg) center top/cover repeat-x 
-    fixed;
+  background: url(../images/glass-montage-balanced-no-margin-top-and-bottom-half-sides.jpg) center top/cover repeat-x fixed;
   -webkit-animation: slide 14s linear infinite;
   color: white;
   text-shadow: 3px 3px 6px black;
@@ -398,15 +397,16 @@ button {
     margin-top: 0px;
     margin-bottom: 0px;
     background-position: center 4%;
-    -webkit-animation: slide 30s linear infinite;
+    background-size: 100vw; /* Ignores desktop scrollbar (prevents stutter while animating) */
+    -webkit-animation: slide 15s linear infinite;
   }
   @-webkit-keyframes slide {
     from { background-position: 0% 4%; }
-    to { background-position: -200vw 4%; }
+    to { background-position: -100vw 4%; }
   }
   @-moz-keyframes slide {
     from { background-position: 0% 4%; }
-    to { background-position: -200vw 4%; }
+    to { background-position: -100vw 4%; }
   }
   .name {
     padding-left: 20%;
@@ -419,15 +419,16 @@ button {
     margin-top: 0px;
     margin-bottom: 0px;
     background-position: center 15%;
-    -webkit-animation: slide 30s linear infinite;
+    background-size: 100vw; /* Ignores desktop scrollbar (prevents stutter while animating) */
+    -webkit-animation: slide 15s linear infinite;
   }
   @-webkit-keyframes slide {
     from { background-position: 0% 15%; }
-    to { background-position: -200vw 15%; }
+    to { background-position: -100vw 15%; }
   }
   @-moz-keyframes slide {
     from { background-position: 0% 15%; }
-    to { background-position: -200vw 15%; }
+    to { background-position: -100vw 15%; }
   }
   .name {
     padding-left: 26%;

@@ -50,61 +50,6 @@ function centerNameVertically() { // called by resizer() in jquery.fittext.js
   }, 300)
 }
 
-/* let backgroundImage = new Image(); */
-/* var backgroundImage = $('header').css('background-image').replace('url(', '').replace(')', '').replace("'", '').replace('"', ''); */
-/* backgroundImage.src = $('dark').css('background-image').replace(/"/g,"").replace(/url\(|\)$/ig, ""); */
-
-/* backgroundImage.onload = function() {
-// Calculates extrinsic dimensions of hero image and generates corresponding CSS variables:
-  var width = this.width
-  var height = this.height
-  console.log(`backgroundImage extrinsic width = ${width}`)
-  console.log(`backgroundImage extrinsic height = ${height}`)
-} */
-
-/* backgroundImage.resize = function() {
-// Calculates extrinsic dimensions of hero image and generates corresponding CSS variables:
-  var width = this.width
-  var height = this.height
-  console.log('backgroundImage resized')
-  console.log(`New backgroundImage extrinsic width = ${width}`)
-  console.log(`New backgroundImage extrinsic height = ${height}`)
-} */
-
-var getBackgroundImageSize = function(el) {
-  var imageUrl = $(el).css('background-image').match(/^url\(["']?(.+?)["']?\)$/);
-  var dfd = new $.Deferred();
-
-  if (imageUrl) {
-      var image = new Image();
-      image.onload = dfd.resolve;
-      image.onerror = dfd.reject;
-      image.src = imageUrl[1];
-  } else {
-      dfd.reject();
-  }
-
-  return dfd.then(function() {
-      return { width: this.width, height: this.height };
-  });
-};
-
-//
-// Usage
-//
-
-function startUp() {
-getBackgroundImageSize(jQuery('header'))
-  .then(function(size) {
-      console.log('Image size is', size.width, size.height);
-  })
-  .fail(function() {
-      console.log('Could not get size because could not load image');
-  });
-}
-
-
 $(function() {
   handleSiteNav()
-  startUp()
 })
