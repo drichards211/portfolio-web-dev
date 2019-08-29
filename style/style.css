@@ -151,9 +151,11 @@ header {
 .portfolio-button {
   position: absolute;
   font: normal 700 18px lato, sans-serif;
+  text-align: center;
   left: 0;
   right: 0;
   bottom: 5.8%;
+  z-index: +1;
 } 
 #portfolio-button {
   color: white;
