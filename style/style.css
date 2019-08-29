@@ -275,9 +275,10 @@ header {
   font-style: italic;
 }
 .app-image img {
-  width: 100%;
+  width: 102%;
   height: 100%;
   margin-top: -10px;
+  margin-left: -1%;
 }
 .contact-links {
   font-weight: 700;
