@@ -94,20 +94,35 @@ a {
   word-wrap:normal !important;
 }
 header {
+  position: relative;
   height: 100vh;
-  background: url(../images/glass-montage-balanced-no-margin-top-and-bottom-half-sides.jpg) center top/cover repeat-x fixed;
-  -webkit-animation: slide 14s linear infinite;
   color: white;
   text-shadow: 3px 3px 6px black;
   text-align: center;
+  overflow: hidden;
 }
-@-webkit-keyframes slide {
-  from { background-position: initial; }
-  to { background-position: calc(-100vh * 1.18634) 0%; }
+.bg-img {
+  /* will-change: transform; */
+  position: absolute;
+  left: calc((-100vh * 1.18634) * 0.5 - 100vw);
+  right: calc((-100vh * 1.18634) * 0.5 - 100vw);
+  top: 0;
+  bottom: 0;
+  background: url(../images/glass-montage-balanced-no-margin-top-and-bottom-half-sides.jpg) center top/auto 100vh
+    repeat-x;
+  z-index: -1;
+  -webkit-animation-name: slide-bg;
+  -webkit-animation-duration: 14s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
 }
-@-moz-keyframes slide {
-  from { background-position: initial; }
-  to { background-position: calc(-100vh * 1.18634) 0%; }
+@-webkit-keyframes slide-bg {
+	from {
+		-webkit-transform: translateX(0);
+	}
+	to { 
+		-webkit-transform: translateX(calc((-100vh * 1.18634)));
+	}
 }
 .header-dark {
   box-shadow: 0px 4px 6px black !important;
@@ -396,17 +411,21 @@ button {
   header {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  .bg-img {
+    left: calc(-100vw);
+    right: calc(-100vw);
     background-position: center 4%;
     background-size: 100vw; /* Ignores desktop scrollbar (prevents stutter while animating) */
-    -webkit-animation: slide 15s linear infinite;
+    -webkit-animation-duration: 15s;
   }
-  @-webkit-keyframes slide {
-    from { background-position: 0% 4%; }
-    to { background-position: -100vw 4%; }
-  }
-  @-moz-keyframes slide {
-    from { background-position: 0% 4%; }
-    to { background-position: -100vw 4%; }
+  @-webkit-keyframes slide-bg {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to { 
+      -webkit-transform: translateX(-100vw);
+    }
   }
   .name {
     padding-left: 20%;
@@ -418,17 +437,21 @@ button {
   header {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  .bg-img {
+    left: calc(-100vw);
+    right: calc(-100vw);
     background-position: center 15%;
     background-size: 100vw; /* Ignores desktop scrollbar (prevents stutter while animating) */
-    -webkit-animation: slide 15s linear infinite;
+    -webkit-animation-duration: 15s;
   }
-  @-webkit-keyframes slide {
-    from { background-position: 0% 15%; }
-    to { background-position: -100vw 15%; }
-  }
-  @-moz-keyframes slide {
-    from { background-position: 0% 15%; }
-    to { background-position: -100vw 15%; }
+  @-webkit-keyframes slide-bg {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to { 
+      -webkit-transform: translateX(-100vw);
+    }
   }
   .name {
     padding-left: 26%;
