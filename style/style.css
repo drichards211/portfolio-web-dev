@@ -228,24 +228,28 @@ header {
   background-repeat: no-repeat;
   background-position: center 28%;
   background-size: 100%;
+  background-attachment: fixed;
 }
 .summer {
   background:url(../images/glass-summer-2000px.jpg);
   background-repeat: no-repeat;
   background-position: center 32%;
   background-size: 100%;
+  background-attachment: fixed;
 }
 .autumn {
   background:url(../images/glass-fall-2000px.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: 100%;
+  background-attachment: fixed;
 }
 .winter {
   background:url(../images/glass-winter-2000px.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: 100%;
+  background-attachment: fixed;
 }
 .app-container {
   margin-top: 20px;

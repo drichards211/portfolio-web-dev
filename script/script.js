@@ -20,7 +20,7 @@ function handleSiteNav() {
       // scroll to beginning of portfolio section:
       $('html, body').animate({
         scrollTop: ($('.spring').offset().top)
-    },800);
+    }, 800);
     } 
     // hamburger button pressed:
     if ($(this).prop('id') === 'hamburger-button') {
