@@ -104,8 +104,12 @@ header {
 .bg-img {
   /* will-change: transform; */
   position: absolute;
-  left: calc((-100vh * 1.18634) * 0.5 - 100vw);
-  right: calc((-100vh * 1.18634) * 0.5 - 100vw);
+  left: calc(0px - (100vh * 1.18634));
+  right: calc(0px - (100vh * 1.18634));
+  /* If: height/width ratio of background-image = (1 / 1.8634), and background-image height = 100vh, 
+  then: background-image width = (100vh * 1.18634) 
+  Subtracting width from 0px yields a negative margin large enough to force browser to pre-render repeated background 
+  image, allowing for smooth scrolling, and zero on-screen painting. */
   top: 0;
   bottom: 0;
   background: url(../images/glass-montage-balanced-no-margin-top-and-bottom-half-sides.jpg) center top/auto 100vh
@@ -417,8 +421,8 @@ button {
     margin-bottom: 0px;
   }
   .bg-img {
-    left: calc(-100vw);
-    right: calc(-100vw);
+    left: -100vw;
+    right: -100vw;
     background-position: center 4%;
     background-size: 100vw; /* Ignores desktop scrollbar (prevents stutter while animating) */
     -webkit-animation-duration: 15s;
@@ -443,8 +447,8 @@ button {
     margin-bottom: 0px;
   }
   .bg-img {
-    left: calc(-100vw);
-    right: calc(-100vw);
+    left: -100vw;
+    right: -100vw;
     background-position: center 15%;
     background-size: 100vw; /* Ignores desktop scrollbar (prevents stutter while animating) */
     -webkit-animation-duration: 15s;
