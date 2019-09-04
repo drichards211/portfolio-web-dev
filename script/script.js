@@ -9,7 +9,7 @@ function handleSiteNav() {
     let hrefNew = ($(this).attr('href') === '#top' ? 'html, body' : $(this).attr('href'))
     // scroll to beginning of specified href:
     $("body, html").animate({ 
-      scrollTop: $(hrefNew).offset().top
+      scrollTop: $(hrefNew).offset().top -45
     }, 800)
   })
   // Respond to other button presses:
@@ -19,7 +19,7 @@ function handleSiteNav() {
       console.log("portfolio button pressed")
       // scroll to beginning of portfolio section:
       $('html, body').animate({
-        scrollTop: ($('.spring').offset().top)
+        scrollTop: $('#portfolio').offset().top -45
     }, 800);
     } 
     // hamburger button pressed:
