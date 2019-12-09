@@ -13,11 +13,9 @@ Accessibility (a11y):
 Styling:
   * [X] Set a maximum width on .name for extremely wide viewports. 
   * [X] Adjust vertical positioning of hero image for extremely wide viewports.
-  * [ ] Audition alternative fonts for #name.
+  * [X] Audition alternative fonts for #name.
   * [ ] Possibly include name in .top-bar.
-  * [ ] Update screen capture images so that text is legible.
-  * [ ] Darken box-shadows slightly on .seasons-div for greater contrast between sections.
-  
+    
 Housekeeping:
   * [ ] Add debouncing to scroll and resize events.
   * [X] Add "Work in Progress" warning to Revuer section.
