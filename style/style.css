@@ -391,7 +391,7 @@ button {
     left: -100vw;
     right: -100vw;
     background-position: center 4%;
-    background-size: 100vw; /* Ignores desktop scrollbar (prevents stutter while animating) */
+    background-size: 100vw; /* vw units ignore desktop scrollbar (prevents stutter while animating) */
     -webkit-animation-duration: 15s;
   }
   @-webkit-keyframes slide-bg {
@@ -408,16 +408,16 @@ button {
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.49);
   }
 }
-@media only screen and (min-aspect-ratio: 6/5) and (min-width: 1024px) {
+@media only screen and (min-aspect-ratio: 5/3) and (min-width: 1024px) {
   header {
     margin-top: 0px;
     margin-bottom: 0px;
   }
   .bg-img {
-    left: -100vw;
-    right: -100vw;
+    left: -80vw;
+    right: -80vw;
     background-position: center 15%;
-    background-size: 100vw; /* Ignores desktop scrollbar (prevents stutter while animating) */
+    background-size: 80vw; /* vw units ignore desktop scrollbar (prevents stutter while animating) */
     -webkit-animation-duration: 15s;
   }
   @-webkit-keyframes slide-bg {
@@ -425,7 +425,7 @@ button {
       -webkit-transform: translateX(0);
     }
     to { 
-      -webkit-transform: translateX(-100vw);
+      -webkit-transform: translateX(-80vw);
     }
   }
   .name {
