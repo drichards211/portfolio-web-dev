@@ -167,18 +167,18 @@ header {
   font-weight: 700;
   padding: 5px 16px;
   border-radius: 25px;
-  background-color: rgb(18, 123, 177);
+  background-color: rgb(18, 123, 177, 0.74);
   border: 2px solid white;
 }
 #portfolio-button:hover {
-  background-color: rgb(75, 75, 75);
-  border: 2px solid rgb(75, 75, 75);
+  background-color: rgb(75, 75, 75, 0.74);
+  border: 2px solid rgb(75, 75, 75, 0);
   color: white;
 }
 #portfolio-button:focus {
   color: white;
-  background-color: rgb(75, 75, 75);
-  border: 2px solid rgb(75, 75, 75);
+  background-color: rgb(75, 75, 75, 0.74);
+  border: 2px solid rgb(75, 75, 75, 0);
 }
 .port-title {
   position: relative;
