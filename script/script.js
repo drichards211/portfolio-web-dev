@@ -19,7 +19,7 @@ function handleSiteNav() {
       console.log("portfolio button pressed")
       // scroll to beginning of portfolio section:
       $('html, body').animate({
-        scrollTop: $('#portfolio').offset().top -45
+        scrollTop: $('#about-me').offset().top -45
     }, 800);
     } 
     // hamburger button pressed:
