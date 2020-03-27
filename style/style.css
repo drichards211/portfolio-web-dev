@@ -45,11 +45,11 @@ a {
 }
 .site-nav:hover {
   color: white;
-  background-color: rgba(20, 63, 105, 0.46);
+  background-color: rgb(18, 123, 177, 0.74);
 }
 .site-nav:focus {
   color: white;
-  background-color: rgba(20, 63, 105, 0.46);
+  background-color: rgb(18, 123, 177, 0.74);
 }
 .top-bar-black {
   position: fixed;
