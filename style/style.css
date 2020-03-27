@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  transition: all 0.5s
+  transition: all 0.7s
 }
 html, body {
   font-size: 16px;
@@ -13,11 +13,12 @@ a {
 }
 .top-bar {
   position: fixed;
-  height: 46px;
-  width: 100%;
+  width: 99.7%;
   top: 4px;
   margin: 0;
   padding: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   background-color: #ffffffc2;
   box-shadow: -6px -6px 26px 0 rgba(223, 223, 223, 0.83), 6px 6px 16px 0 rgba(105, 105, 105, 0.51);
   border-radius: 25px;
@@ -29,6 +30,9 @@ a {
   padding: 0;
   display: inline;
 }
+.menu-opened {
+  background-color: #fffffff0;
+}
 .site-nav {
   display: none;
   float: left;
@@ -37,7 +41,7 @@ a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-  color: rgb(75, 75, 75);
+  color: rgb(0, 0, 0);
 }
 .site-nav:hover {
   color: white;
@@ -58,7 +62,6 @@ a {
 .vertical-nav {
   display: block;
   width: 100%;
-  background-color: #ffffffc2;
 }
 #seasons-thumbnail {
   width: 35px;
@@ -268,6 +271,9 @@ button {
   cursor: pointer;
   border: 0;
   background-color: transparent;
+}
+button:focus {
+  outline:0 !important;
 }
 .tech-stack {
   font-style: italic;
