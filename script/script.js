@@ -27,16 +27,19 @@ function handleSiteNav() {
       console.log("hamburger button pressed")
       event.stopPropagation() // do not bubble-up the click event:
       // display or hide dropdown menu:
+      $('.top-bar').toggleClass('menu-opened')
       $('.site-nav').toggleClass('vertical-nav')
     }
     // hide dropdown menu after click, or if clicked outside:
     $(document).click(function(){
       $('.site-nav').removeClass('vertical-nav')
+      $('.top-bar').removeClass('menu-opened')
     })
     window.onresize = function() {
     // hide dropdown menu when viewport rotated or resized:
       console.log('Hiding dropdown menu')
       $('.site-nav').removeClass('vertical-nav')
+      $('.top-bar').removeClass('menu-opened')
     } 
   })
 }
