@@ -20,7 +20,8 @@ a {
   left: 50%;
   transform: translate(-50%, 0);
   background-color: #ffffffc2;
-  box-shadow: -6px -6px 26px 0 rgba(223, 223, 223, 0.83), 6px 6px 16px 0 rgba(105, 105, 105, 0.51);
+  box-shadow: -4px -4px 10px 0 rgba(225, 225, 225), 4px 4px 10px 0 rgba(105, 105, 105, 0.51);
+  border: 2px solid #ffffff75;
   border-radius: 25px;
   z-index: 9997;
 }
@@ -41,7 +42,7 @@ a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0, 0.75);
 }
 .site-nav:hover {
   color: white;
@@ -171,17 +172,18 @@ header {
   padding: 5px 16px;
   border-radius: 25px;
   background-color: rgb(18, 123, 177, 0.74);
-  border: 2px solid white;
+  border: 2px solid #ffffffb0;
+  box-shadow: 0px 0px 10px 0 rgba(255, 255, 255, 0.68), 0px 4px 10px 0 rgba(105, 105, 105, 0.51);
 }
 #portfolio-button:hover {
   background-color: rgb(75, 75, 75, 0.74);
-  border: 2px solid rgb(75, 75, 75, 0);
+  border: 2px solid #ffffffb0;
   color: white;
 }
 #portfolio-button:focus {
   color: white;
   background-color: rgb(75, 75, 75, 0.74);
-  border: 2px solid rgb(75, 75, 75, 0);
+  border: 2px solid #ffffffb0;
 }
 .port-title {
   position: relative;
