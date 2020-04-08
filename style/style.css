@@ -20,7 +20,7 @@ a {
   left: 50%;
   transform: translate(-50%, 0);
   background-color: #ffffffc2;
-  box-shadow: -4px -4px 10px 0 rgba(225, 225, 225), 4px 4px 10px 0 rgba(105, 105, 105, 0.51);
+  box-shadow: 4px 4px 8px rgba(105, 105, 105, 0.5), -4px -4px 8px #ffffff66;
   border: 2px solid #ffffff75;
   border-radius: 25px;
   z-index: 9997;
@@ -38,7 +38,7 @@ a {
   display: none;
   float: left;
   text-align: center;
-  padding: 10.5px 15px;
+  padding: 8.5px 15px;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
@@ -65,9 +65,9 @@ a {
   width: 100%;
 }
 #seasons-thumbnail {
-  width: 35px;
-  height: 35px;
-  margin: 6px 20px 5px 13px;
+  width: 32px;
+  height: 32px;
+  margin: 5px 14px 5px 13px;
   float: left;
   padding: 0;
   background: url(../images/glass-montage-balanced-square-button.jpg);
@@ -77,12 +77,11 @@ a {
 #hamburger-button {
   position: absolute;
   right: 0;
-  top: 0;
-  margin-top: 1px;
+  top: 2px;
   margin-right: 13px;
   float: right;
   padding: 0;
-  font-size: 37px;
+  font-size: 32px;
   color: rgb(75, 75, 75);
   display: block;
 }
@@ -169,21 +168,18 @@ header {
   color: white;
   font-size: 20px;
   font-weight: 700;
-  padding: 5px 16px;
-  border-radius: 25px;
+  padding: 8.5px 15.5px;
+  border-radius: 13px;
   background-color: rgb(18, 123, 177, 0.74);
-  border: 2px solid #ffffffb0;
-  box-shadow: 0px 0px 10px 0 rgba(255, 255, 255, 0.68), 0px 4px 10px 0 rgba(105, 105, 105, 0.51);
+  box-shadow: 4px 4px 8px rgba(105, 105, 105, 0.5), -4px -4px 8px #ffffffb3;
 }
 #portfolio-button:hover {
   background-color: rgb(75, 75, 75, 0.74);
-  border: 2px solid #ffffffb0;
   color: white;
 }
 #portfolio-button:focus {
   color: white;
   background-color: rgb(75, 75, 75, 0.74);
-  border: 2px solid #ffffffb0;
 }
 .port-title {
   position: relative;
@@ -382,7 +378,7 @@ button:focus {
   }
   #portfolio-button {
     font-size: 20px;
-    padding: 8px 18px;
+    padding: 9px 16px;
   }
   .name {
     padding-left: 20%;
