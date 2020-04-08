@@ -44,15 +44,6 @@ function handleSiteNav() {
   })
 }
 
-function centerNameVertically() { // called by resizer() in jquery.fittext.js
-// Centers name vertically within the hero image:
-  setTimeout(function() {
-    // wait 0.3 seconds for .name element to finish adjusting size before measuring:
-    let nameHeight1 = $(".name").outerHeight() + "px"
-    $(".name").css({"top": `calc(50% - (${nameHeight1} / 2))`})
-  }, 300)
-}
-
 $(function() {
   handleSiteNav()
 })
