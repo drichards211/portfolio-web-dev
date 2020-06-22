@@ -22,7 +22,7 @@ a {
   background-color: #ffffffc2;
   box-shadow: 4px 4px 8px rgba(105, 105, 105, 0.5), -4px -4px 8px #ffffff66;
   border: 2px solid #ffffff75;
-  border-radius: 25px;
+  border-radius: 11px;
   z-index: 9997;
 }
 .top-bar li {
