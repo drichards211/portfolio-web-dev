@@ -50,6 +50,7 @@ a {
 }
 .site-nav:focus {
   color: white;
+  outline:0 !important;
   background-color: rgb(18, 123, 177, 0.74);
 }
 .top-bar-black {
@@ -181,16 +182,18 @@ header {
   font-size: 20px;
   font-weight: 700;
   padding: 8.5px 15.5px;
+  border: 1px solid white;
   border-radius: 13px;
   background-color: rgb(18, 123, 177, 0.74);
-  box-shadow: 4px 4px 8px rgba(105, 105, 105, 0.5), -4px -4px 8px #ffffffb3;
 }
 #portfolio-button:hover {
   background-color: rgb(75, 75, 75, 0.74);
+  border: 1px solid rgb(75, 75, 75, 0.74);
   color: white;
 }
 #portfolio-button:focus {
   color: white;
+  border: 1px solid rgb(75, 75, 75, 0.74);
   background-color: rgb(75, 75, 75, 0.74);
 }
 .port-title {
@@ -273,6 +276,7 @@ header {
   border-radius: 5px;
   background: #ffffff;
   box-shadow: inset 5px 5px 9px #d9d9d9, inset -5px -5px 9px #ffffff;
+  outline:0 !important;
 }
 .app-tech {
   font-size: 16px;
