@@ -125,13 +125,13 @@ header {
   object-fit: fill;
   /* width: 100vw; */
   height: 100vh;
-  float: left;
+  /* float: left; */
   /* top: 0;
   left: 0; */
 }
 .bg-video {
   /* will-change: transform; */
-  /* position: absolute; */
+  position: absolute;
   left: calc(0px - (100vh * 3.55555556));
   right: calc(0px - (100vh * 3.5555556));
   /* Video aspect ratio = (1 / 1.7778), video height = 100vh
