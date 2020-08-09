@@ -113,9 +113,10 @@ header {
   overflow: hidden;
 }
 .banner {
-  width: calc(100vw + ((100vh * 3.55555556) * 2));
-  left: 50%;
-  transform: translate(-50%, 0);
+  /* position: relative; */
+  /* width: calc(100vw + ((100vh * 3.55555556) * 4)); */
+  /* left: 50%; */
+  /* transform: translate(-50%, 0); */
 }
 .banner-video {
   /* position: absolute; */
@@ -125,15 +126,16 @@ header {
   object-fit: fill;
   /* width: 100vw; */
   height: 100vh;
-  /* float: left; */
+  float: right;
   /* top: 0;
   left: 0; */
 }
 .bg-video {
   /* will-change: transform; */
   position: absolute;
+  /* width: 100%; */
   left: calc(0px - (100vh * 3.55555556));
-  right: calc(0px - (100vh * 3.5555556));
+  right: calc(0px - (100vh * 3.55555556));
   /* Video aspect ratio = (1 / 1.7778), video height = 100vh
   
   */
@@ -143,6 +145,8 @@ header {
   image, allowing for smooth scrolling, and zero on-screen painting. */
   top: 0;
   bottom: 0;
+  /* left: 50%; */
+  /* transform: translate(-50%, 0); */
   /* background: url(../images/glass-montage-balanced-no-margin-top-and-bottom-half-sides.jpg) center top/auto 100vh
     repeat-x; */
   z-index: -1;
@@ -155,7 +159,7 @@ header {
 	from {
 		-webkit-transform: translateX(0);
 	}
-	to { 
+	to {
 		-webkit-transform: translateX(calc((-100vh * 3.5555556)));
 	} 
 }
