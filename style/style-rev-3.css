@@ -1,0 +1,510 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.7s
+}
+html, body {
+  font-size: 16px;
+  font: normal 400 18px lato, sans-serif;
+  min-width: 320px; /* prevents layout from breaking on tiny screens */
+  overflow-x: hidden; /* prevents horizontal scrollbar due to .banner wider than 100vw */
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.top-bar {
+  position: fixed;
+  width: 100vw;
+  /* top: 4px; */
+  margin: 0;
+  padding: 0;
+  /* left: 50%; */
+  /* transform: translate(-50%, 0); */
+  /* background-color: rgb(255 255 255 / 74%); */
+  /* box-shadow: 4px 4px 8px rgb(0 0 0 / 59%), -4px -4px 8px #ffffff66; */
+  /* border: 2px solid #ffffff75; */
+  /* border-radius: 11px; */
+  z-index: 9997;
+}
+.top-bar li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.menu-opened {
+  background-color: rgb(255 255 255);
+  /* border-radius: 18px; */
+  box-shadow: 5px 5px 5px;
+  box-shadow: 0px 0px 20px 20px rgb(0 0 0 / 49%);
+}
+.site-nav {
+  display: none;
+  float: left;
+  text-align: center;
+  padding: 8.5px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  color: rgb(61 61 61);
+}
+.site-nav:hover {
+  color: white;
+  background-color: rgb(18, 123, 177, 0.74);
+}
+.site-nav:focus {
+  color: white;
+  outline:0 !important;
+  background-color: rgb(18, 123, 177, 0.74);
+}
+.top-bar-black {
+  position: fixed;
+  height: 46px;
+  width: 100%;
+  top: 0px;
+  background-color: #131d2e;
+  z-index: 9997;
+}
+.vertical-nav {
+  display: block;
+  width: 100%;
+}
+#seasons-thumbnail {
+  width: 32px;
+  height: 32px;
+  margin: 5px 14px 5px 13px;
+  float: left;
+  padding: 0;
+  background: url(../images/glass-montage-balanced-square-button.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hamburger-button {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  margin-right: 13px;
+  float: right;
+  padding: 0;
+  font-size: 32px;
+  color: rgb(0 0 0);
+  text-shadow: -2px 2px 2px rgb(255 255 255);
+  display: block;
+}
+.screen-reader-text {
+  border:0;   
+  clip: rect(1px, 1px, 1px, 1px); 
+  clip-path: inset(50%);
+  height: 1px; 
+  margin: -1px;
+  width: 1px; 
+  overflow: hidden; 
+  position: absolute !important;
+  word-wrap:normal !important;
+}
+header {
+  position: relative;
+  height: 100vh;
+  color: #3d3d3d;
+  /* text-shadow: -5px -3px 4px white; */
+  /* color: white;
+  text-shadow: 3px 3px 6px black; */
+  text-align: center;
+  overflow: hidden;
+}
+.banner {
+  width: calc(100vw + ((100vh * 3.55555556) * 2));
+  left: 50%; 
+  transform: translate(-50%, 0);
+}
+.banner-video {
+  /* position: absolute; */
+  /* z-index: -1; */
+}
+#bg-vid-1 {
+  object-fit: fill;
+  /* width: 100vw; */
+  height: 100vh;
+  float: left;
+  /* top: 0;
+  left: 0; */
+}
+.bg-video {
+  /* will-change: transform; */
+  position: absolute;
+  left: calc(0px - (100vh * 3.55555556));
+  right: calc(0px - (100vh * 3.5555556));
+  /* Video aspect ratio = (1 / 1.7778), video height = 100vh
+  
+  */
+  /* If: height/width ratio of background-image = (1 / 1.8634), and background-image height = 100vh, 
+  then: background-image width = (100vh * 1.18634) 
+  Subtracting width from 0px yields a negative margin large enough to force browser to pre-render repeated background 
+  image, allowing for smooth scrolling, and zero on-screen painting. */
+  top: 0;
+  bottom: 0;
+  /* background: url(../images/glass-montage-balanced-no-margin-top-and-bottom-half-sides.jpg) center top/auto 100vh
+    repeat-x; */
+  z-index: -1;
+  -webkit-animation-name: slide-bg;
+  -webkit-animation-duration: 24s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes slide-bg {
+	from {
+		-webkit-transform: translateX(0);
+	}
+	to { 
+		-webkit-transform: translateX(calc((-100vh * 3.5555556)));
+	} 
+}
+.header-dark {
+  box-shadow: 0px 4px 6px black !important;
+}
+.name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); /* CAUSES minor box-shadow rendering error */
+  z-index: -1; /* FIXES minor box-shadow rendering error */
+  margin: auto;
+  /* border-radius: 25px; */
+  border: 2px solid #ffffff75;
+  background-color: rgb(255 255 255 / .74);
+  box-shadow: 0px 0px 20px 20px rgb(0 0 0 / 49%);
+}
+.size-name {
+  font-size: 8.5vw; /* Fallback */
+  font-size: min(8.5vw, 80px); /* Fallback */
+  font-size: clamp(27px, 8.5vw, 80px); 
+}
+.size-title {
+  font-size: 4.71vw; /* Fallback */
+  font-size: min(4.71vw, 44px); /* Fallback */
+  font-size: clamp(15px, 4.71vw, 44px); 
+}
+#name {
+  font-family: lato, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  margin: 6px 0px 0px 0px;
+}
+#title {
+  font-family: lato, sans-serif;
+  font-weight: 800;
+  margin-top: 0px;
+  /* margin-bottom: 16px; */
+}
+.portfolio-button {
+  position: absolute;
+  font: normal 700 18px lato, sans-serif;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 4.6%;
+  z-index: +1;
+} 
+#portfolio-button {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8.5px 15.5px;
+  /* border: 1px solid white; */
+  border-radius: 13px;
+  background-color: rgb(0 0 0 / 49%);
+}
+#portfolio-button:hover {
+  background-color: rgb(75, 75, 75, 0.74);
+  border: 1px solid rgb(75, 75, 75, 0.74);
+  color: white;
+}
+#portfolio-button:focus {
+  color: white;
+  border: 1px solid rgb(75, 75, 75, 0.74);
+  background-color: rgb(75, 75, 75, 0.74);
+}
+.port-title {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: calc(50% - 14px);
+  background-color: rgba(0,0,0,.08);  
+  box-shadow: 0px 0px 30px rgba(0,0,0,.79);
+}
+.div-line-header {
+  height: 1px;
+  width: 95%;
+  position: relative;
+  top: 310px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #989898;
+  position: absolute;
+  z-index: -1;
+}
+.banner-spacer {
+  height: 45px;
+}
+.spacer {
+  height: 0px;
+}
+.p-title {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 93px;
+  margin-bottom: 11px;
+}
+.div-line {
+  height: 1px;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(75, 75, 75);
+}
+.app-container {
+  margin-top: 20px;
+}
+.app-spacer {
+  height: 0px;
+}
+.app-title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -.02em; /* = (Adobe XD line spacing / 1000)em */ 
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.app-about {
+  margin: 0px;
+}
+.app-links {
+  font-weight: 700;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.app-link {
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 5px 5px 9px #d9d9d9, -5px -5px 9px #ffffff;
+}
+.app-link:hover {
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: inset 5px 5px 9px #d9d9d9, inset -5px -5px 9px #ffffff;
+}
+.app-link:focus {
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: inset 5px 5px 9px #d9d9d9, inset -5px -5px 9px #ffffff;
+  outline:0 !important;
+}
+.app-tech {
+  font-size: 16px;
+  font-style: italic;
+}
+.app-image img {
+  width: 102%;
+  height: 100%;
+  margin-top: -10px;
+  margin-left: -1%;
+}
+.contact-links {
+  font-weight: 700;
+}
+.do-not-break {
+  white-space: nowrap;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.end-spacer {
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 0px 6px 7px 0px #000e1acc;
+}
+button {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+button:focus {
+  outline:0 !important;
+}
+.tech-stack {
+  font-style: italic;
+}
+
+/* COLOR LIBRARY ========================== */
+  .color-red {
+    color: rgb(238,7,0);
+  }
+  .color-purple {
+    color: rgb(157,89,234);
+  }
+  .color-mod-purple {
+    color: rgb(181,53,155)
+  }
+  .color-orange {
+    color: rgb(254,153,0);
+  }
+  .color-blue {
+    color: rgb(18, 123, 177);
+  }
+  
+/* FONT TRICKS ============================ */
+  .semi-bold {
+    font-weight: 600;
+  }  
+  .bold {
+    font-weight: 700;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  .size-24 {
+    font-size: 24px;
+  }
+
+/* CSS GRID =============================== */
+.row {
+  max-width: 1400px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.full-row {
+  max-width: 100%;
+  min-width: 100%;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.col-3, .col-4, .col-6, .col-6-links, .col-12 {
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.no-margin {
+  margin: 0px;
+}
+.no-padding {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.right {
+  float: right;
+}
+
+/* SITE-WIDE VIEWPORT RESPONSE ========================== */
+@media only screen and (min-width: 1024px) {
+  .col-6 {
+    width: 50%;
+  }
+  .spacer {
+    height: 60px;
+  }
+  .banner-spacer {
+    height: 60px;
+  }
+  .app-spacer {
+    height: 55px;
+  }
+  #portfolio-button {
+    font-size: 20px;
+    padding: 9px 16px;
+  }
+  .name {
+    box-shadow: 0px 0px 20px 19px rgba(0, 0, 0, 0.49);
+    /* box-shadow: 4px 4px 11px rgb(0 0 0 / 59%), -4px -4px 11px #ffffff66; */
+  }
+  .size-name {
+    font-size: 80px; /* Fallback */
+    font-size: min(8.5vw, 80px); /* Fallback */
+    font-size: clamp(27px, 8.5vw, 80px); 
+  }
+  .size-title {
+    font-size: 44px; /* Fallback */
+    font-size: min(4.71vw, 44px); /* Fallback */
+    font-size: clamp(15px, 4.71vw, 44px); 
+  }
+}
+/* @media only screen and (min-width: 900px) {
+  .site-nav {
+    display: block;
+  }
+  #hamburger-button {
+    display: none;
+  }
+} */
+@media only screen and (min-width: 460px) {
+  .col-3, .col-4, .col-6, .col-6-links, .col-12 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #seasons-thumbnail {
+    margin-left: 20px;
+  }
+  #hamburger-button {
+    margin-right: 20px;
+  }
+}
+@media only screen and (min-aspect-ratio: 6/5) {
+  header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  /* .bg-img {
+    left: -100vw;
+    right: -100vw;
+    background-position: center 4%;
+    background-size: 100vw; /* vw units ignore desktop scrollbar (prevents stutter while animating) */
+  /*-webkit-animation-duration: 15s;
+  }
+  @-webkit-keyframes slide-bg {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to { 
+      -webkit-transform: translateX(-100vw);
+    }
+  } */
+  .name {
+    box-shadow: 0px 0px 20px 20px rgb(0 0 0 / 49%);
+  } 
+}
+@media only screen and (min-aspect-ratio: 5/3) and (min-width: 1024px) {
+  header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  /* .bg-img {
+    left: -80vw;
+    right: -80vw;
+    background-position: center 15%;
+    background-size: 80vw; /* vw units ignore desktop scrollbar (prevents stutter while animating) */
+  /*-webkit-animation-duration: 15s;
+  }
+  @-webkit-keyframes slide-bg {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to { 
+      -webkit-transform: translateX(-80vw);
+    }
+  } */
+  .name {
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.49);
+  } 
+}

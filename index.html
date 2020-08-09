@@ -12,7 +12,7 @@
   <script src="https://kit.fontawesome.com/9d623a979b.js"></script>
   <!-- STYLESHEETS ========================================= -->
   <link rel="stylesheet" type="text/css" href="./style/normalize.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="./style/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./style/style-rev-4.css" />
   <!-- SCRIPTS ============================================= -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="./script/script.js"></script>
@@ -30,11 +30,11 @@
   
   <nav role="navigation">
     <div class="top-bar">
-      <a href="#top" id="seasons-thumbnail" aria-label="Return to top of page"></a>
+      <!-- <a href="#top" id="seasons-thumbnail" aria-label="Return to top of page"></a> -->
       <a class="site-nav" href="#portfolio">PORTFOLIO</a>
       <a class="site-nav" href="#about-me">ABOUT</a>
       <a class="site-nav" href="#contact">CONTACT</a>
-      <div class="site-nav"></div>
+      <!-- <div class="site-nav"></div> -->
       <button type="button" id="hamburger-button" aria-label="Open the menu"><i class="fas fa-bars" aria-hidden="true">
         </i></button>
     </div>
@@ -44,8 +44,33 @@
     </div>
   </nav>
   <main role="main">
-    <header role="banner">
-      <div class="bg-img"></div>
+    <header role="banner" class="banner">
+      <div class="bg-video">
+        <video playsinline autoplay muted loop poster="./images/video-still.jpg" id="bg-vid-1">
+          <source src="./images/istockphoto-685279894-640_adpp_is.mp4" type="video/mp4">
+        </video>
+        <video playsinline autoplay muted loop poster="./images/video-still.jpg" id="bg-vid-1">
+          <source src="./images/istockphoto-685279894-640_adpp_is.mp4" type="video/mp4">
+        </video>
+        <video playsinline autoplay muted loop poster="./images/video-still.jpg" id="bg-vid-1">
+          <source src="./images/istockphoto-685279894-640_adpp_is.mp4" type="video/mp4">
+        </video>
+        <video playsinline autoplay muted loop poster="./images/video-still.jpg" id="bg-vid-1">
+          <source src="./images/istockphoto-685279894-640_adpp_is.mp4" type="video/mp4">
+        </video>
+        <video playsinline autoplay muted loop poster="./images/video-still.jpg" id="bg-vid-1">
+          <source src="./images/istockphoto-685279894-640_adpp_is.mp4" type="video/mp4">
+        </video>
+        <video playsinline autoplay muted loop poster="./images/video-still.jpg" id="bg-vid-1">
+          <source src="./images/istockphoto-685279894-640_adpp_is.mp4" type="video/mp4">
+        </video>
+        <video playsinline autoplay muted loop poster="./images/video-still.jpg" id="bg-vid-1">
+          <source src="./images/istockphoto-685279894-640_adpp_is.mp4" type="video/mp4">
+        </video>
+        <!-- <video playsinline autoplay muted loop poster="./images/video-still.jpg" id="bg-vid-1">
+          <source src="./images/istockphoto-685279894-640_adpp_is.mp4" type="video/mp4">
+        </video> -->
+      </div>
       <div class="name">
         <h1 id="name" class="size-name">DANIEL RICHARDS</h1>
         <h2 id="title" class="size-title">WEB DEVELOPER AND DESIGNER</h2>
@@ -171,8 +196,9 @@
         <div class="col-6 no-margin right" id="about-me">
           <div class="app-container">
             <div class="app-image">
-              <img src="./images/glass-montage-balanced-no-margin-top-and-bottom-half-sides.jpg" 
-                alt="Four seasons glass-tile image.">
+              <video playsinline autoplay muted loop poster="./images/seasons-sideways.jpg" id="about-vid">
+                <source src="./images/stock-footage--seasons-nature-collage-several-footage-at-different-time-of-the-year-planet-earth-life-cycle.webm" type="video/webm">
+              </video>
             </div>
           </div>
         </div>

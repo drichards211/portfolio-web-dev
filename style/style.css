@@ -6,6 +6,7 @@ html, body {
   font-size: 16px;
   font: normal 400 18px lato, sans-serif;
   min-width: 320px; /* prevents layout from breaking on tiny screens */
+  overflow-x: hidden; /* prevents horizontal scrollbar due to .banner wider than 100vw */
 }
 a {
   color: inherit;
@@ -13,12 +14,12 @@ a {
 }
 .top-bar {
   position: fixed;
-  width: 99.7%;
-  top: 4px;
+  width: 100vw;
+  /* top: 4px; */
   margin: 0;
   padding: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
+  /* left: 50%; */
+  /* transform: translate(-50%, 0); */
   background-color: #ffffffc2;
   box-shadow: 4px 4px 8px rgba(105, 105, 105, 0.5), -4px -4px 8px #ffffff66;
   border: 2px solid #ffffff75;
@@ -100,27 +101,49 @@ a {
 header {
   position: relative;
   height: 100vh;
-  color: white;
-  text-shadow: 3px 3px 6px black;
+  color: #1c1c1c;
+  text-shadow: -5px -3px 4px white;
+  /* color: white;
+  text-shadow: 3px 3px 6px black; */
   text-align: center;
   overflow: hidden;
 }
-.bg-img {
+.banner {
+  width: calc(100vw + ((100vh * 3.55555556) * 2));
+  left: 50%; 
+  transform: translate(-50%, 0);
+}
+.banner-video {
+  /* position: absolute; */
+  /* z-index: -1; */
+}
+#bg-vid-1 {
+  object-fit: fill;
+  /* width: 100vw; */
+  height: 100vh;
+  float: left;
+  /* top: 0;
+  left: 0; */
+}
+.bg-video {
   /* will-change: transform; */
   position: absolute;
-  left: calc(0px - (100vh * 1.18634));
-  right: calc(0px - (100vh * 1.18634));
+  left: calc(0px - (100vh * 3.55555556));
+  right: calc(0px - (100vh * 3.5555556));
+  /* Video aspect ratio = (1 / 1.7778), video height = 100vh
+  
+  */
   /* If: height/width ratio of background-image = (1 / 1.8634), and background-image height = 100vh, 
   then: background-image width = (100vh * 1.18634) 
   Subtracting width from 0px yields a negative margin large enough to force browser to pre-render repeated background 
   image, allowing for smooth scrolling, and zero on-screen painting. */
   top: 0;
   bottom: 0;
-  background: url(../images/glass-montage-balanced-no-margin-top-and-bottom-half-sides.jpg) center top/auto 100vh
-    repeat-x;
+  /* background: url(../images/glass-montage-balanced-no-margin-top-and-bottom-half-sides.jpg) center top/auto 100vh
+    repeat-x; */
   z-index: -1;
   -webkit-animation-name: slide-bg;
-  -webkit-animation-duration: 14s;
+  -webkit-animation-duration: 24s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
 }
@@ -129,8 +152,8 @@ header {
 		-webkit-transform: translateX(0);
 	}
 	to { 
-		-webkit-transform: translateX(calc((-100vh * 1.18634)));
-	}
+		-webkit-transform: translateX(calc((-100vh * 3.5555556)));
+	} 
 }
 .header-dark {
   box-shadow: 0px 4px 6px black !important;
@@ -158,13 +181,13 @@ header {
 }
 #name {
   font-family: lato, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
   margin: 10px 0px 0px 0px;
 }
 #title {
   font-family: lato, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   margin-top: 0px;
   margin-bottom: 18px;
 }
@@ -410,14 +433,14 @@ button:focus {
     font-size: clamp(15px, 4.71vw, 44px); 
   }
 }
-@media only screen and (min-width: 900px) {
+/* @media only screen and (min-width: 900px) {
   .site-nav {
     display: block;
   }
   #hamburger-button {
     display: none;
   }
-}
+} */
 @media only screen and (min-width: 460px) {
   .col-3, .col-4, .col-6, .col-6-links, .col-12 {
     padding-left: 20px;
@@ -435,12 +458,12 @@ button:focus {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .bg-img {
+  /* .bg-img {
     left: -100vw;
     right: -100vw;
     background-position: center 4%;
     background-size: 100vw; /* vw units ignore desktop scrollbar (prevents stutter while animating) */
-    -webkit-animation-duration: 15s;
+  /*-webkit-animation-duration: 15s;
   }
   @-webkit-keyframes slide-bg {
     from {
@@ -449,22 +472,22 @@ button:focus {
     to { 
       -webkit-transform: translateX(-100vw);
     }
-  }
+  } */
   .name {
     box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.49);
-  }
+  } 
 }
 @media only screen and (min-aspect-ratio: 5/3) and (min-width: 1024px) {
   header {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .bg-img {
+  /* .bg-img {
     left: -80vw;
     right: -80vw;
     background-position: center 15%;
     background-size: 80vw; /* vw units ignore desktop scrollbar (prevents stutter while animating) */
-    -webkit-animation-duration: 15s;
+  /*-webkit-animation-duration: 15s;
   }
   @-webkit-keyframes slide-bg {
     from {
@@ -473,8 +496,8 @@ button:focus {
     to { 
       -webkit-transform: translateX(-80vw);
     }
-  }
+  } */
   .name {
     box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 0.49);
-  }
+  } 
 }
