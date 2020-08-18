@@ -106,17 +106,14 @@ header {
   overflow: hidden;
 }
 .bg-img {
-  /* will-change: transform; */
   position: absolute;
-  left: calc(0px - (100vh * 1.18634));
-  right: calc(0px - (100vh * 1.18634));
-  /* If: height/width ratio of background-image = (1 / 1.8634), and background-image height = 100vh, 
-  then: background-image width = (100vh * 1.18634) 
-  Subtracting width from 0px yields a negative margin large enough to force browser to pre-render repeated background 
-  image, allowing for smooth scrolling, and zero on-screen painting. */
+  left: -100vh;
+  right: -100vh;
+  /* Negative margins force browser to pre-render repeated background image, allowing for smooth scrolling, and zero on-screen 
+  painting. */
   top: 0;
   bottom: 0;
-  background: url(../images/glass-montage-balanced-no-margin-top-and-bottom-half-sides.jpg) center top/auto 100vh
+  background: url(../images/glass-montage-sharper.jpg) center top/auto 100vh
     repeat-x;
   z-index: -1;
   -webkit-animation-name: slide-bg;
@@ -129,7 +126,7 @@ header {
 		-webkit-transform: translateX(0);
 	}
 	to { 
-		-webkit-transform: translateX(calc((-100vh * 1.18634)));
+		-webkit-transform: translateX(calc(-100vh));
 	}
 }
 .header-dark {
@@ -430,7 +427,7 @@ button:focus {
     margin-right: 20px;
   }
 }
-@media only screen and (min-aspect-ratio: 6/5) {
+@media only screen and (min-aspect-ratio: 1/1) {
   header {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -460,10 +457,10 @@ button:focus {
     margin-bottom: 0px;
   }
   .bg-img {
-    left: -80vw;
-    right: -80vw;
+    left: -60vw;
+    right: -60vw;
     background-position: center 15%;
-    background-size: 80vw; /* vw units ignore desktop scrollbar (prevents stutter while animating) */
+    background-size: 60vw; /* vw units ignore desktop scrollbar (prevents stutter while animating) */
     -webkit-animation-duration: 15s;
   }
   @-webkit-keyframes slide-bg {
@@ -471,7 +468,7 @@ button:focus {
       -webkit-transform: translateX(0);
     }
     to { 
-      -webkit-transform: translateX(-80vw);
+      -webkit-transform: translateX(-60vw);
     }
   }
   .name {
