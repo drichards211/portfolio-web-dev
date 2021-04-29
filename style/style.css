@@ -13,8 +13,7 @@ a {
 }
 .top-bar {
   position: fixed;
-  width: 99.7%;
-  top: 4px;
+  width: 100%;
   margin: 0;
   padding: 0;
   left: 50%;
@@ -22,7 +21,6 @@ a {
   background-color: #ffffffc2;
   box-shadow: 4px 4px 8px rgba(105, 105, 105, 0.5), -4px -4px 8px #ffffff66;
   border: 2px solid #ffffff75;
-  border-radius: 11px;
   z-index: 9997;
 }
 .top-bar li {
@@ -179,8 +177,8 @@ header {
   font-size: 20px;
   font-weight: 700;
   padding: 8.5px 15.5px;
-  border: 1px solid white;
-  border-radius: 13px;
+  border: 1px solid rgb(18, 123, 177, 0.74);
+  border-radius: 30px;
   background-color: rgb(18, 123, 177, 0.74);
 }
 #portfolio-button:hover {
