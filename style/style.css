@@ -142,14 +142,14 @@ header {
   box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.49);
 }
 .size-name {
-  font-size: 8.5vw; /* Fallback */
-  font-size: min(8.5vw, 80px); /* Fallback */
-  font-size: clamp(27px, 8.5vw, 80px); 
+  font-size: 7.6vw; /* Fallback */
+  font-size: min(7.6vw, 80px); /* Fallback */
+  font-size: clamp(27px, 7.6vw, 80px); 
 }
 .size-title {
   font-size: 4.71vw; /* Fallback */
-  font-size: min(4.71vw, 44px); /* Fallback */
-  font-size: clamp(15px, 4.71vw, 44px); 
+  font-size: min(4.71vw, 50px); /* Fallback */
+  font-size: clamp(16.7px, 4.71vw, 50px); 
 }
 #name {
   font-family: lato, sans-serif;
@@ -400,9 +400,9 @@ button:focus {
     font-size: clamp(27px, 8.5vw, 80px); 
   }
   .size-title {
-    font-size: 44px; /* Fallback */
-    font-size: min(4.71vw, 44px); /* Fallback */
-    font-size: clamp(15px, 4.71vw, 44px); 
+    font-size: 49.5px; /* Fallback */
+    font-size: min(8.5vw, 49.5px); /* Fallback */
+    font-size: clamp(15px, 8.5vw, 49.5px); 
   }
 }
 @media only screen and (min-width: 900px) {
