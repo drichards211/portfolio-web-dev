@@ -321,8 +321,14 @@ button:focus {
   .color-orange {
     color: rgb(254,153,0);
   }
+  .color-orange-a11y {
+    color: rgb(214,129,0);
+  }
   .color-blue {
     color: rgb(18, 123, 177);
+  }
+  .color-green {
+    color: rgb(59 154 0);
   }
   
 /* FONT TRICKS ============================ */
